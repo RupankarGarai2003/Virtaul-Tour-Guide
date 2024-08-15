@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #e0e0e0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Place Styles */
+.place,
+.attraction,
+.cultural,
+.event {
+    margin-bottom: 40px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.place h3,
+.attraction h3,
+.cultural h3,
+.event h3 {
+    margin-top: 0;
+    font-size: 1.7em;
+    color: #007BFF;
+    font-weight: 600;
+}
+
+/* Image Styles */
+.place img,
+.attraction img,
+.cultural img,
+.event img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Styles */
+.map {
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map iframe {
+    border: 0;
+    width: 100%;
+    height: 250px;
+}
+
+/* Footer Styles */
+footer {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .place img,
+    .attraction img,
+    .cultural img,
+    .event img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+
+    .place h3,
+    .attraction h3,
+    .cultural h3,
+    .event h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .place,
+    .attraction,
+    .cultural,
+    .event {
+        display: flex;
+        align-items: center;
+    }
+
+    .place img,
+    .attraction img,
+    .cultural img,
+    .event img {
+        max-width: 300px;
+        margin-right: 20px;
+    }
+
+    .map {
+        height: 300px;
+    }
+}

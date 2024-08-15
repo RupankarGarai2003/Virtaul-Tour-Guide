@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Visited Places And Non-Visited Places</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Visited Places</h2>
+            <ul id="visited-list">
+                <!-- Visited cities will appear here -->
+            </ul>
+        </section>
+        <section>
+            <h2>Non-Visited Places</h2>
+            <ul id="non-visited-list">
+                <!-- Non-visited cities will appear here -->
+                <li>
+                    <input type="checkbox" id="city1" name="city1" onchange="toggleVisitStatus(this)">
+                    <label for="city1">Mumbai</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city2" name="city2" onchange="toggleVisitStatus(this)">
+                    <label for="city2">Delhi</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city3" name="city3" onchange="toggleVisitStatus(this)">
+                    <label for="city3">Bangalore</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city4" name="city4" onchange="toggleVisitStatus(this)">
+                    <label for="city4">Hyderabad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city5" name="city5" onchange="toggleVisitStatus(this)">
+                    <label for="city5">Chennai</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city6" name="city6" onchange="toggleVisitStatus(this)">
+                    <label for="city6">Ahmedabad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city7" name="city7" onchange="toggleVisitStatus(this)">
+                    <label for="city7">Kolkata</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city8" name="city8" onchange="toggleVisitStatus(this)">
+                    <label for="city8">Surat</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city9" name="city9" onchange="toggleVisitStatus(this)">
+                    <label for="city9">Pune</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city10" name="city10" onchange="toggleVisitStatus(this)">
+                    <label for="city10">Jaipur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city11" name="city11" onchange="toggleVisitStatus(this)">
+                    <label for="city11">Lucknow</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city12" name="city12" onchange="toggleVisitStatus(this)">
+                    <label for="city12">Kanpur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city13" name="city13" onchange="toggleVisitStatus(this)">
+                    <label for="city13">Nagpur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city14" name="city14" onchange="toggleVisitStatus(this)">
+                    <label for="city14">Indore</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city15" name="city15" onchange="toggleVisitStatus(this)">
+                    <label for="city15">Thane</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city16" name="city16" onchange="toggleVisitStatus(this)">
+                    <label for="city16">Bhopal</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city17" name="city17" onchange="toggleVisitStatus(this)">
+                    <label for="city17">Visakhapatnam</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city18" name="city18" onchange="toggleVisitStatus(this)">
+                    <label for="city18">Pimpri-Chinchwad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city19" name="city19" onchange="toggleVisitStatus(this)">
+                    <label for="city19">Patna</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city20" name="city20" onchange="toggleVisitStatus(this)">
+                    <label for="city20">Vadodara</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city21" name="city21" onchange="toggleVisitStatus(this)">
+                    <label for="city21">Ghaziabad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city22" name="city22" onchange="toggleVisitStatus(this)">
+                    <label for="city22">Ludhiana</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city23" name="city23" onchange="toggleVisitStatus(this)">
+                    <label for="city23">Agra</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city24" name="city24" onchange="toggleVisitStatus(this)">
+                    <label for="city24">Nashik</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city25" name="city25" onchange="toggleVisitStatus(this)">
+                    <label for="city25">Faridabad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city26" name="city26" onchange="toggleVisitStatus(this)">
+                    <label for="city26">Meerut</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city27" name="city27" onchange="toggleVisitStatus(this)">
+                    <label for="city27">Rajkot</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city28" name="city28" onchange="toggleVisitStatus(this)">
+                    <label for="city28">Kalyan-Dombivli</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city29" name="city29" onchange="toggleVisitStatus(this)">
+                    <label for="city29">Vasai-Virar</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city30" name="city30" onchange="toggleVisitStatus(this)">
+                    <label for="city30">Varanasi</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city31" name="city31" onchange="toggleVisitStatus(this)">
+                    <label for="city31">Srinagar</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city32" name="city32" onchange="toggleVisitStatus(this)">
+                    <label for="city32">Aurangabad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city33" name="city33" onchange="toggleVisitStatus(this)">
+                    <label for="city33">Dhanbad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city34" name="city34" onchange="toggleVisitStatus(this)">
+                    <label for="city34">Amritsar</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city35" name="city35" onchange="toggleVisitStatus(this)">
+                    <label for="city35">Navi Mumbai</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city36" name="city36" onchange="toggleVisitStatus(this)">
+                    <label for="city36">Allahabad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city37" name="city37" onchange="toggleVisitStatus(this)">
+                    <label for="city37">Ranchi</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city38" name="city38" onchange="toggleVisitStatus(this)">
+                    <label for="city38">Howrah</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city39" name="city39" onchange="toggleVisitStatus(this)">
+                    <label for="city39">Coimbatore</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city40" name="city40" onchange="toggleVisitStatus(this)">
+                    <label for="city40">Jabalpur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city41" name="city41" onchange="toggleVisitStatus(this)">
+                    <label for="city41">Gwalior</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city42" name="city42" onchange="toggleVisitStatus(this)">
+                    <label for="city42">Vijayawada</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city43" name="city43" onchange="toggleVisitStatus(this)">
+                    <label for="city43">Jodhpur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city44" name="city44" onchange="toggleVisitStatus(this)">
+                    <label for="city44">Madurai</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city45" name="city45" onchange="toggleVisitStatus(this)">
+                    <label for="city45">Raipur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city46" name="city46" onchange="toggleVisitStatus(this)">
+                    <label for="city46">Kota</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city47" name="city47" onchange="toggleVisitStatus(this)">
+                    <label for="city47">Guwahati</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city48" name="city48" onchange="toggleVisitStatus(this)">
+                    <label for="city48">Chandigarh</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city49" name="city49" onchange="toggleVisitStatus(this)">
+                    <label for="city49">Solapur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city50" name="city50" onchange="toggleVisitStatus(this)">
+                    <label for="city50">Hubli-Dharwad</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city51" name="city51" onchange="toggleVisitStatus(this)">
+                    <label for="city51">Mysore</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city52" name="city52" onchange="toggleVisitStatus(this)">
+                    <label for="city52">Tiruchirappalli</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city53" name="city53" onchange="toggleVisitStatus(this)">
+                    <label for="city53">Bareilly</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city54" name="city54" onchange="toggleVisitStatus(this)">
+                    <label for="city54">Aligarh</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city55" name="city55" onchange="toggleVisitStatus(this)">
+                    <label for="city55">Jalandhar</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city56" name="city56" onchange="toggleVisitStatus(this)">
+                    <label for="city56">Bhubaneswar</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city57" name="city57" onchange="toggleVisitStatus(this)">
+                    <label for="city57">Salem</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city58" name="city58" onchange="toggleVisitStatus(this)">
+                    <label for="city58">Mira-Bhayandar</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city59" name="city59" onchange="toggleVisitStatus(this)">
+                    <label for="city59">Warangal</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city60" name="city60" onchange="toggleVisitStatus(this)">
+                    <label for="city60">Guntur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city61" name="city61" onchange="toggleVisitStatus(this)">
+                    <label for="city61">Bhiwandi</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city62" name="city62" onchange="toggleVisitStatus(this)">
+                    <label for="city62">Saharanpur</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="city63" name="city63" onchange="toggleVisitStatus(this)">
+                    <label for="city63">Gorakhpur</label>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

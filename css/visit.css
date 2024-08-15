@@ -1,0 +1,11 @@
+.service-column {
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.service-item {
+    margin-bottom: 20px; /* Space between items within a column */
+}
+
+.row {
+    margin-bottom: 40px; /* Additional space between rows */
+}

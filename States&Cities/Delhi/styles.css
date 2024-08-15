@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Alice Blue background */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #87ceeb; /* Light Sky Blue */
+    color: #2f4f4f; /* Dark Slate Gray */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #4682b4; /* Steel Blue */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #4169e1; /* Royal Blue */
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    background-color: #e0ffff; /* Light Cyan */
+    color: #4682b4; /* Steel Blue */
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 4px solid #87ceeb; /* Light Sky Blue */
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Place Styles */
+.place {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #ffffff; /* White background for place cards */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Place Headings */
+.place h3 {
+    margin-top: 0;
+    font-size: 1.6em;
+    color: #2e8b57; /* Sea Green */
+}
+
+/* Image Styles */
+.place img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #e0ffff; /* Light Cyan border */
+}
+
+/* Map Styles */
+.map {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map iframe {
+    border: 0;
+    width: 100%;
+    height: 200px;
+}
+
+/* Footer Styles */
+footer {
+    background: #87ceeb; /* Light Sky Blue */
+    color: #2f4f4f; /* Dark Slate Gray */
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .place img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+
+    .place h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .place {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .place img {
+        max-width: 280px;
+        margin-right: 20px;
+    }
+
+    .map {
+        height: 250px;
+    }
+}
