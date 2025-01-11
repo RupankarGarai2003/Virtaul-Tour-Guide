@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #e0e0e0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 6px;
+}
+
+section h2 {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+
+/* places */
+/* General Styling */
+.city {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+/* Additional Styling to ensure the heading is centered */
+h3 {
+  text-align: center;
+  margin: 0 auto; /* Center the heading */
+  font-size: 2.2em;
+  color: #007BFF;
+  margin-bottom: -26px; /* Removes bottom space */
+  margin-top: -39px;
+  padding-bottom: 0; /* Removes padding at the bottom */
+ 
+}
+  /* Column styling */
+  .city div {
+    flex: 1;
+    padding: 16px;
+  }
+  
+  /* Column 1 and Column 4 styling for places */
+  .city .places-list {
+    text-align: left;
+  }
+  
+ /* Ensure image and map have the same size */
+.city img,
+.city .map iframe {
+  width: 100%;
+  height: 250px; /* Set a fixed height for both image and map */
+  object-fit: cover; /* Ensures the image scales properly */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+  
+  /* Additional styling for better layout */
+  .city .places-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .city .places-list ul li {
+    margin: 10px 0;
+  }
+  
+  .city .places-list ul li:before {
+    content: "• ";
+    color: #000;
+    font-weight: bold;
+  }
+  
+
+
+  footer {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    position: relative; /* Allows for further positioning if needed */
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the footer */
+    margin: 0 auto; /* Center the container */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Font size */
+}
+
+
+
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .city {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .city div {
+      margin-bottom: 20px;
+    }
+  
+    .city .map iframe {
+      height: 200px;
+    }
+  }
+  

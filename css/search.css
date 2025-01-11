@@ -1,0 +1,23 @@
+
+        #searchInput {
+            width: 100%;
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: rgb(7, 152, 243);
+            font-weight: bold;
+        }
+        .no-results {
+            color: red;
+            font-style: italic;
+        }
+        .result-count {
+            margin-top: 10px;
+            font-weight: bold;
+        }

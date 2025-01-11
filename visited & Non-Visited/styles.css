@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('your-background-image.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Make the background image cover the entire area */
+    animation: backgroundAnimation 20s infinite alternate; /* Animation applied here */
+}
+
+header {
+    background: linear-gradient(45deg, #00ff00, #0000ff, #4b0082, #11c3ba);
+    background-size: 600% 600%;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+section {
+    width: 25%;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+/* Keyframes for background color change */
+@keyframes backgroundAnimation {
+    0% {
+        background: url('Himalaya\ .jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    10% {
+        background: url('pexels-amitav-hira-3470260-5186627.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    20% {
+        background: url('pexels-jeswinthomas-1007426.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    30% {
+        background: url('Amber.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    40% {
+        background: url('images.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    50% {
+        background: url('sunder\ .jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    60% {
+        background: url('pexels-amitav-hira-3470260-5186627.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    70% {
+        background: url('pexels-jeswinthomas-1007426.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    80% {
+        background: url('Himalaya\ .jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    100% {
+        background: url('sunder\ .jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+}

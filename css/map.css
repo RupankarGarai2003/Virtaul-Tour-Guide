@@ -1,0 +1,22 @@
+.about-container {
+    display: flex;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-map {
+    flex: 1;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .about-map {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

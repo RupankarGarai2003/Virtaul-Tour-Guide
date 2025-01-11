@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.yt-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.yt-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 items per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.yt-video {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yt-video img,
+.yt-video iframe {
+    width: 100%;
+    height: 200px; /* Set a fixed height for images and iframes */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    
+}
+
+.yt-video h4 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    width: 100%;
+}

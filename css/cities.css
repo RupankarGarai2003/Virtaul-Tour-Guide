@@ -1,0 +1,136 @@
+/* Section Styles */
+
+/* Header Styles */
+header {
+    background: #4679e8; /* Light gray background for the header */
+    padding: 0rem; /* Generous padding for spacing */
+    border-bottom: 1px solid #1fafd7; /* Light border for separation */
+    box-shadow: 0 4px 6px rgb(8, 82, 211); /* Subtle shadow for depth */
+    text-align: center; /* Center text alignment */
+}
+
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    font-size: 2rem; /* Large font size for prominence */
+    color: #2c3e50; /* Dark blue-gray for the heading text */
+    margin-bottom: 1rem; /* Space below heading */
+    line-height: 1.2; /* Line height for readability */
+    text-transform: uppercase; /* Capitalize for emphasis */
+}
+
+header p {
+    font-family: 'Arial', sans-serif; /* Clean font for readability */
+    font-size: 1rem; /* Slightly larger text for readability */
+    color: #070707; /* Medium gray for the paragraph text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    max-width: 800px; /* Limit width for better readability */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+}
+
+.place {
+    margin-bottom: 1rem;
+    padding: 0rem;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center; /* Center the heading */
+    background: #ffffff; /* White background for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgb(25, 165, 175); /* Deeper shadow for emphasis */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.place:hover {
+    background: #ecf0f1; /* Light gray background on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.place h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    font-size: 2rem;
+    color: #2980b9; /* Bright blue for the heading text */
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* Capitalize heading */
+}
+
+.place-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+/* Flex Item Styles */
+.place-content > * {
+    flex: 1;
+    min-width: 280px; /* Minimum width for responsive design */
+}
+
+/* Description Styles */
+.place p {
+    font-family: 'Arial', sans-serif; /* Clean font for readability */
+    font-size: 1.1rem;
+    color: #34495e; /* Darker gray for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Image Styles */
+.place img {
+    width: 200px; /* Set your preferred width */
+    height: 200px; /* Set your preferred height */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 2px solid #bdc3c7; /* Light border around image */
+    transition: border-color 0.3s; /* Smooth transition for hover effect */
+    object-fit: cover; /* Ensures the image covers the defined width and height without distortion */
+}
+
+
+.place img:hover {
+    border-color: #2980b9; /* Blue border on hover */
+}
+
+/* Map Styles */
+.place iframe {
+    width: 200px; /* Set your preferred width */
+    height: 200px; /* Set your preferred height */
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Deeper shadow for emphasis */
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.place iframe:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around the text */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .place-content {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .place iframe {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
